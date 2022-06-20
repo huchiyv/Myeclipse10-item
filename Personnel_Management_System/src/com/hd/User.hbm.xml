@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+ <hibernate-mapping>
+   <class name="com.hd.User" table="dl">
+     
+       <id name="id" column="c_id">
+            <generator class="native"></generator>
+         </id>
+       
+       <property name="na" column="c_na"></property>
+       <property name="pw" column="c_pw"></property>
+   </class>
+ </hibernate-mapping>
