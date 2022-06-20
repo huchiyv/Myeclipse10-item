@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Personnel_Management_System"
+  id="myeclipse.1655738639112"
+  context-root="/Personnel_Management_System"
+  j2ee-spec="5.0"
+  archive="Personnel_Management_System.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
