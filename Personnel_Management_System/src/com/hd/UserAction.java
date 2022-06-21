@@ -7,6 +7,7 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.junit.Test;
 
+import com.sun.org.apache.bcel.internal.generic.NEW;
 import com.test.Demo;
 
 public class UserAction {
@@ -64,6 +65,20 @@ public class UserAction {
 		Demo delDemo =new Demo();
 		delDemo.delete(delId);
 		return "SUCCESS";
+	}
+	
+	@Test
+	public User findAUser(String id){
+		UserAction del = new UserAction();
+		Demo demo = new Demo();
+		List<User> list =demo.findUser();
+		 for (User user : list) {
+			 if(id.equals( user.getId().toString() ) ){
+//				 System.out.println(user.getNa());
+				 return user;
+			 }
+		 }
+		 return null;
 	}
 
 }

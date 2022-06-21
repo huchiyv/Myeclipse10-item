@@ -72,6 +72,26 @@ public class Demo {
 		session.close();
 		System.out.println("已完成更改");
 	}
+	
+	/**
+	 * 更改密码
+	 */
+	public void updataPw(String pw) {
+		User user = new User();
+		user.setPw(pw);
+
+		Session session = HibernateUtil.getSession();
+		// 4.开启事务
+		Transaction tx = session.beginTransaction();
+		// 5执行添加操作
+		session.update(user);
+		// 6提交事务
+		tx.commit();
+		// 7.关闭资源
+		session.close();
+		System.out.println("已完成更改");
+	}
+	
 
 	/**
 	 * 删除数据 Integer Id ：需要删除的用户id

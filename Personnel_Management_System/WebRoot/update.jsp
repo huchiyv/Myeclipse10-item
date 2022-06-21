@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*,com.test.*,com.hd.*" pageEncoding="UTF-8"%>
 <script>
   // 合法性检验
    function check()
@@ -11,13 +11,19 @@
 </script>
 
 <body>
-   <form action="updateAction.jsp" method="post" name="aaa">
+	<%
+	String id=request.getParameter("id");
+	UserAction link = new UserAction();
+	User user = link.findAUser(id);
+	 %>
+   <form action="update.action" method="post">
    <center>
-      用 户 名：<input type="text" name="name" value="<%=request.getParameter("name")%>" readonly/><br><br/>
-      密 &nbsp;&nbsp; 码：<input type="text" name="pwd" value="<%=request.getParameter("pwd")%>" readonly/><br><br/>
+   i  d：<input type="text" name="ID" value="<%=id%>" readonly/><br><br/>
+      用 户 名：<input type="text" name="name" value="<%=user.getNa()%>" readonly/><br><br/>
+      密 &nbsp;&nbsp; 码：<input type="text" name="pwd" value="<%=user.getPw()%>" readonly/><br><br/>
       修改密码：<input type="password" name="pwd1" /><br><br/>
       确认密码：<input type="password" name="pwd2" /><br><br/>
-      <input type="button" value="确定"  onclick="check();">
+      <input type="submit" value="确定"  onclick="check();">
    <center>
    </form>
   </body>

@@ -15,6 +15,10 @@
    <result name="SUCCESS">/regAction.jsp</result>
  </action>
  
+  <action name="update" class="com.test.UpdateTest" method="update">
+   <result name="SUCCESS">/updateAction.jsp</result>
+ </action>
+ 
 </package>
 
 

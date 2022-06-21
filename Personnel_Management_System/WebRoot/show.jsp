@@ -2,7 +2,7 @@
 <jsp:useBean id="op" class="com.test.Demo" scope="session"></jsp:useBean>
 
 <table border=1>
-<tr><th>用户名</th><th>密码</th><th>操作</th></tr>
+<tr><th>ID</th><th>用户名</th><th>密码</th><th>操作</th></tr>
 <%
 List<User> list = op.showAll();
 for (int i = 0; i < list.size(); i++) {
