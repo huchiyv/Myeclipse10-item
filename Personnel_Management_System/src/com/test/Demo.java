@@ -24,10 +24,10 @@ public class Demo {
 		// demo.save(user1);
 		// demo.updata(new Integer(1), "孙悟空", "78910");
 		// demo.delete(new Integer(3));
-//		List<User> list2 =demo.showAll();
-//		for (User user : list2) {
-//			System.out.println(user);
-//		}
+		List<User> list2 =demo.findUser();
+		for (User user : list2) {
+			System.out.println(user);
+		}
 		
 
 	}
@@ -140,4 +140,26 @@ public class Demo {
 		}
 	}
 
+	public List<User> findUser() {
+		List<User> list1 = null;
+		Session session = HibernateUtil.getSession();
+		// 4.开启事务
+		Transaction tx = session.beginTransaction();
+
+		try {
+			// 5执行查询
+			Criteria criteria = session.createCriteria(User.class);
+			List<User> list = criteria.list();
+			list1 = list;
+			// 6提交事务
+			tx.commit();
+		} catch (Exception e) {
+			tx.rollback();
+		} finally {
+			// 7.关闭资源
+			session.close();
+			return list1;
+		}
+	}
+	
 }

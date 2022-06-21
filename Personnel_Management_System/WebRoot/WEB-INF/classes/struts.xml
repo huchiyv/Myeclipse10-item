@@ -5,7 +5,7 @@
 	<struts>
 <constant name="struts.devMode" value="true"></constant>
 <package name="default" namespace="/" extends="struts-default">
- <action name="login" class="com.hd.UserAction" method="login">
+ <action name="login" class="com.test.LoginTest" method="login">
    <result name="SUCCESS">/success.jsp</result>
    <result name="ERROR">/fail.jsp</result>
  </action>
