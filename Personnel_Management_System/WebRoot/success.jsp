@@ -24,5 +24,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
     登陆成功 <br>
+    <%
+    out.print("三秒后跳到主页面");
+    response.setHeader("refresh", "3;url=show.jsp"); %>
   </body>
 </html>
