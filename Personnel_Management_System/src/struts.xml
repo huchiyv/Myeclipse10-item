@@ -5,9 +5,17 @@
 	<struts>
 <constant name="struts.devMode" value="true"></constant>
 <package name="default" namespace="/" extends="struts-default">
+
  <action name="login" class="com.test.LoginTest" method="login">
    <result name="SUCCESS">/success.jsp</result>
    <result name="ERROR">/fail.jsp</result>
  </action>
+ 
+ <action name="reg" class="com.test.RegTest" method="reg">
+   <result name="SUCCESS">/regAction.jsp</result>
+ </action>
+ 
 </package>
+
+
 </struts>    

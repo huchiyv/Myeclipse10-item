@@ -35,7 +35,7 @@ public class Demo {
 	/**
 	 * 保存数据 User userPar ：需要保存新的用户对象
 	 */
-	public void save(User userPar) {
+	public String  save(User userPar) {
 		User user = new User();
 		user = userPar;
 		Session session = HibernateUtil.getSession();
@@ -48,6 +48,7 @@ public class Demo {
 		// 7.关闭资源
 		session.close();
 		System.out.println("已完成添加");
+		return "SUCCESS";
 	}
 
 	/**

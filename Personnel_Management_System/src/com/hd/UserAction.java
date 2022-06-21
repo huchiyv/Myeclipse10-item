@@ -53,37 +53,11 @@ public class UserAction {
 	 return "ERROR";
 	 }
 
-//	public String Login2() {
-//		System.out.print(na + pwd + "login成功");
-//		Session session = HibernateUtil.getSession();
-//		boolean has = false;
-//		try {
-//			List adminlist = null;
-//			adminlist = session.createQuery("from User").list();
-//			session.beginTransaction().commit();
-//			if (adminlist != null) {
-//				Iterator it = adminlist.iterator();
-//				while (it.hasNext()) {
-//					User a = (User) it.next();
-//					System.out.println(a.getNa() + a.getPw());
-//					if (a.getNa().equals(na) && a.getPw().equals(pwd)) {
-//						has = true;
-//						break;
-//					}
-//				}
-//			}
-//			if (has)
-//				return "SUCCESS";
-//			else
-//				return "ERROR";
-//		} catch (HibernateException e) {
-//			e.printStackTrace();
-//			return "ERROR";
-//		} finally {
-//			if (session.isOpen()) {
-//				session.close();
-//			}
-//		}
-//	}
+	public String reg(){
+		Demo regDemo =new Demo();
+		User regUser = new User(na, pwd);
+		String regString = regDemo.save(regUser);
+		return regString;
+	}
 
 }

@@ -15,12 +15,12 @@
 </script>
   <body>
   <h1>
-    <form name="form1" action="regAction.jsp" method="post">
+    <form  action="reg.action" method="post">
     <table>
      <tr><td> 用户名：</td><td><input type="text" name="name"/></td></tr>
      <tr><td>  密  码：</td><td><input type="password" name="pwd"/></td></tr>
       <tr><td>确认密码：</td><td><input type="password" name="pwd1"/></td></tr>
-      <tr><td></td><td><input type="button" value="提交" onclick="check()"/></td></tr>
+      <tr><td></td><td><input type="submit" value="提交" onclick="check()"/></td></tr>
     </table>
     </form>
        </h1>
