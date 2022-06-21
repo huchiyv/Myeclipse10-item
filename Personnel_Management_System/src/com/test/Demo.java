@@ -76,7 +76,7 @@ public class Demo {
 	/**
 	 * 删除数据 Integer Id ：需要删除的用户id
 	 */
-	public void delete(Integer Id) {
+	public String  delete(Integer Id) {
 		User user = new User();
 		user.setId(Id);
 		Session session = HibernateUtil.getSession();
@@ -89,6 +89,7 @@ public class Demo {
 		// 7.关闭资源
 		session.close();
 		System.out.println("已完成删除");
+		return "SUCCESS";
 	}
 
 	/**
@@ -140,7 +141,11 @@ public class Demo {
 			return list1;
 		}
 	}
-
+	
+	/**
+	 * 
+	 * 遍历一遍User表并存储在list1返回一个list1
+	 */
 	public List<User> findUser() {
 		List<User> list1 = null;
 		Session session = HibernateUtil.getSession();

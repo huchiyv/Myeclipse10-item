@@ -59,5 +59,11 @@ public class UserAction {
 		String regString = regDemo.save(regUser);
 		return regString;
 	}
+	
+	public String del(Integer delId ){
+		Demo delDemo =new Demo();
+		delDemo.delete(delId);
+		return "SUCCESS";
+	}
 
 }
