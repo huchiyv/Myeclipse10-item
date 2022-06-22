@@ -35,6 +35,12 @@ User b = list.get(i);
 <%}%>
 
 		</table>
+		<div align="center" >
+								
+		<input type="button" value="返回主页" class="anniu" onclick="window.location.href='HOME.jsp'">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点击这里<input type="button" value="重新注册" class="anniu" onclick="window.location.href='reg.jsp'"> 新用户
+			
+		</div>
     </div>
 </div>
 </div>
