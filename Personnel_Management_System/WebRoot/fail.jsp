@@ -9,20 +9,24 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>My JSP 'fail.jsp' starting page</title>
-    
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">    
-	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<meta http-equiv="description" content="This is my page">
-	<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
-
+    <title>login fail</title>
+    <link rel="stylesheet" href="fail.css"/>
+    <style>
+       .demo1{position: fixed; top: 10px; left:0px; bottom:0px; width:100%; height: 50px;background-color: #acffcb;z-index:999;}
+    </style>
   </head>
   
   <body>
-    登陆失败，密码错误 <br>
+  
+	<div class="demo1">
+			<h1 align="center">好可惜密码不正确，回去再想想`(*>﹏<*)′</h1>
+		<div align="center" style="position:relative;top:20px">
+			<button class="button1" onclick="window.location.href='login.jsp'">重新输入</button><br>
+			<h6>10秒后自动返回主页</h6>
+		</div>
+	</div>
+	<%
+    response.setHeader("refresh", "10;url=HOME.jsp"); 
+    %>
   </body>
 </html>

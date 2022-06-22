@@ -6,6 +6,9 @@
 <html>
   <head>
   <link rel="stylesheet"  href="video.css">
+      <style>
+       .demo1{position: fixed; top: 10px; left:0px; bottom:0px; width:100%; height: 50px;background-color: #acffcb;z-index:999;}
+    </style>
   </head>
   <script>
 
@@ -15,6 +18,10 @@
 
 </script>
 <body>
+   	<div class="demo1">
+	<h1 align="center">( •̀ ω •́ )✧正在努力删除中......</h1>
+	</div>
+
    <%
    String id=request.getParameter("id");
 	DelTest del =new DelTest();
@@ -25,17 +32,15 @@
    //out.println("(～￣▽￣)～即将启航回港(～￣▽￣)～");
     %>
     
-    <div class="videocontainer">
+ <div class="videocontainer">
 
     <video class="fullscreenvideo"  id="v1"  muted="" autoplay=""  loop="">
 
         <source src="video/del2.mp4" type="video/mp4">
 
     </video>
-    <div align="center" style="position:relative;top:500px">
-  		<caption ><FONT size=6 color="white" face="MV boli">
-  			( •̀ ω •́ )✧正在努力删除中......</FONT></caption>
-</div>
+
+
 
 </div>
  </body>

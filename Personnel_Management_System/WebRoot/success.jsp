@@ -7,25 +7,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <base href="<%=basePath%>">
-    
-    <title>My JSP 'success.jsp' starting page</title>
-    
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">    
-	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<meta http-equiv="description" content="This is my page">
-	<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
-
+    <meta charset="UTF-8">
+    <title>Login Success</title>
+    <link rel="stylesheet" href="success.css"/>
+    <style>
+       .demo1{position: fixed; top: 10px; left:0px; bottom:0px; width:100%; height: 50px;background-color: #acffcb;z-index:999;}
+    </style>
   </head>
   
-  <body>
-    登陆成功 <br>
+  <body >
+	<div class="demo1">
+	<h1 align="center">恭喜你！φ(゜▽゜*)♪，登录成功即将进入......</h1>
+	</div>
+	
+  
     <%
-    out.print("三秒后跳到主页面");
+    //out.print("三秒后跳到主页面");
     response.setHeader("refresh", "3;url=show.jsp"); %>
   </body>
 </html>

@@ -20,6 +20,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
 	<link rel="stylesheet"  href="video.css">
+	    <style>
+       .demo1{position: fixed; top: 10px; left:0px; bottom:0px; width:100%; height: 50px;background-color: #acffcb;z-index:999;}
+    </style>
   </head>
     <script>
 
@@ -29,6 +32,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 </script>
   <body>
+   	<div class="demo1">
+	<h1 align="center">恭喜！！！ヾ(≧▽≦*)o删除成功！ (～￣▽￣)～即将启航回港(～￣▽￣)～</h1>
+	</div>
+
   	    <div class="videocontainer">
 
     <video class="fullscreenvideo"  id="v2"  muted="" autoplay=""  loop="">
@@ -38,13 +45,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     </video>
 
 </div>
-	    <div align="center" style="position:relative;top:500px">
-  		<caption ><FONT size=6 color="white" face="MV boli">
-  			恭喜！！！ヾ(≧▽≦*)o删除成功！<br>(～￣▽￣)～即将启航回港(～￣▽￣)～</FONT></caption>
-</div>
+
+		
+
 
     <%
-    response.setHeader("refresh","3;url=show.jsp");
+    response.setHeader("refresh","4;url=show.jsp");
      %>
   </body>
 </html>
