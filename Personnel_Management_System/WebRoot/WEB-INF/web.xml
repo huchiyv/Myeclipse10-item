@@ -6,7 +6,7 @@
 	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
   <display-name>Personnel_Management_System</display-name>	
   <welcome-file-list>
-    <welcome-file>login.jsp</welcome-file>
+    <welcome-file>HOME.jsp</welcome-file>
   </welcome-file-list>
   
   
