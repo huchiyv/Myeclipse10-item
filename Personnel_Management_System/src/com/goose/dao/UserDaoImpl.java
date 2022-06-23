@@ -11,8 +11,7 @@ import com.goose.controller.*;
 public class UserDaoImpl implements UserDao{
 
 	public String insert(User userPar) {
-		User user = new User();
-		user = userPar;
+		User user  = userPar;
 		Session session = HibernateUtil.getSession();
 		// 4.开启事务
 		Transaction tx = session.beginTransaction();
@@ -83,9 +82,8 @@ public class UserDaoImpl implements UserDao{
 		} finally {
 			// 7.关闭资源
 			session.close();
-			return list;
 		}
-
+		return list;
 	}
 		
 }
