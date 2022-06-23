@@ -9,22 +9,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>My JSP 'delusuccess.jsp' starting page</title>
-    
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">    
-	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<meta http-equiv="description" content="This is my page">
-	<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
-	<link rel="stylesheet"  href="video.css">
-	    <style>
+    <title>删除成功</title>
+	<link rel="stylesheet"  href="css/video.css">
+	<style>
        .demo1{position: fixed; top: 10px; left:0px; bottom:0px; width:100%; height: 50px;background-color: #acffcb;z-index:999;}
     </style>
   </head>
-    <script>
+<script>
 
     var video= document.getElementById('v2');
 
@@ -36,7 +27,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<h1 align="center">恭喜！！！ヾ(≧▽≦*)o删除成功！ (～￣▽￣)～即将启航回港(～￣▽￣)～</h1>
 	</div>
 
-  	    <div class="videocontainer">
+<div class="videocontainer">
 
     <video class="fullscreenvideo"  id="v2"  muted="" autoplay=""  loop="">
 

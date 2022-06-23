@@ -1,10 +1,10 @@
-<%@ page language="java" import="java.util.*,com.test.*,com.hd.*" pageEncoding="utf-8"%>
-<jsp:useBean id="op" class="com.test.Demo" scope="session"></jsp:useBean>
+<%@ page language="java" import="java.util.*,com.goose.*" pageEncoding="utf-8"%>
+<jsp:useBean id="op" class="com.goose.dao.UserDaoImpl" scope="session"></jsp:useBean>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="show.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/show.css" media="all" />
 
 </head>
 <body>
@@ -18,14 +18,14 @@
 		<table border=1>
 <tr><th>I&nbsp;D</th><th>用户名</th><th>密&nbsp;码</th><th>操&nbsp;作</th></tr>
 <%
-List<User> list = op.showAll();
+List<com.goose.controller.User> list = op.selectAll();
 for (int i = 0; i < list.size(); i++) {
-User b = list.get(i);
+com.goose.controller.User b = list.get(i);
 %>
   <tr>
      <td style="text-align:center"><%=b.getId()%></td>
-     <td style="text-align:center"><%=b.getNa()%></td>
-     <td style="text-align:center"><%=b.getPw()%></td>
+     <td style="text-align:center"><%=b.getName()%></td>
+     <td style="text-align:center"><%=b.getPwd()%></td>
      <td style="text-align:center">
      &nbsp;<a href="#" onclick="window.confirm('确定删除吗？')?this.href='del.jsp?id=<%=b.getId()%>':this.href='javascript:void()';">删除用户</a>
      &nbsp;<a href="#" onclick="window.confirm('确定要更改密码吗？')?this.href='update.jsp?id=<%=b.getId()%>':this.href='javascript:void()';">更改密码</a>

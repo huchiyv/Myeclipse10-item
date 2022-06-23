@@ -8,7 +8,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
     var video= document.getElementById('v1');
 
-    video.playbackRate = 0.5;
+    video.playbackRate = 1;
 
 </script>
 
@@ -18,6 +18,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <base href="<%=basePath%>">
     
     <title>
+    主页
     </title>
     
  <style>
@@ -36,20 +37,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  color: white;
  }
  </style>
-    
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">    
-	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<meta http-equiv="description" content="This is my page">
-	
-	<link rel="stylesheet"  href="video.css">
+	<link rel="stylesheet"  href="css/video.css">
 	<!-- 
 	<embed  src="video/loginbgm.mp3" loop="10" autostar="true"hidden="true"/>
 	 <h1 align="center" 
 		style="color:red ; font-size:50px">Hello JSP!!!</h1>
 	 -->
-	
 
   </head>
   

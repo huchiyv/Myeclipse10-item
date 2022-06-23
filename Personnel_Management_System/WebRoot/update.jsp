@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*,com.test.*,com.hd.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*,com.goose.*" pageEncoding="UTF-8"%>
 
 <%
 String path = request.getContextPath();
@@ -8,9 +8,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <meta charset="UTF-8">
     <title>更改密码</title>
-	<link rel="stylesheet" type="text/css" href="update.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/update.css" media="all" />
   </head>
 <script type="text/javascript">
       function checking(){
@@ -40,8 +39,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <body>
 	<%
 	String id=request.getParameter("id");
-	UserAction link = new UserAction();
-	User user = link.findAUser(id);
+	com.goose.service.UserAction link = new com.goose.service.UserAction();
+	com.goose.controller.User user = link.findAUser(id);
 	 %>
 	<center>
 		<div class="back">
@@ -60,11 +59,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 						<tr>
 							<td align="left">用户名：</td>
-							<td><input type="text"  name="name"  value="<%=user.getNa() %>" class="kuang" readonly></td>
+							<td><input type="text"  name="name"  value="<%=user.getName() %>" class="kuang" readonly></td>
 						</tr>
 						<tr>
 							<td align="left">密码：</td>
-							<td><input type="text" name="pwd"  value="<%=user.getPw() %>" class="kuang" readonly></td>
+							<td><input type="text" name="pwd"  value="<%=user.getPwd() %>" class="kuang" readonly></td>
 						</tr>
 						<tr>
 							<td align="left">修改密码：</td>

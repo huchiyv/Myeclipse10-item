@@ -1,4 +1,4 @@
-package com.hd;
+package com.goose.dao;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

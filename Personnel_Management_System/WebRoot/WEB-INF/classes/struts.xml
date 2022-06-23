@@ -6,16 +6,16 @@
 <constant name="struts.devMode" value="true"></constant>
 <package name="default" namespace="/" extends="struts-default">
 
- <action name="login" class="com.test.LoginTest" method="login">
+ <action name="login" class="com.goose.service.Execute" method="login">
    <result name="SUCCESS">/success.jsp</result>
    <result name="ERROR">/fail.jsp</result>
  </action>
  
- <action name="reg" class="com.test.RegTest" method="reg">
+ <action name="reg" class="com.goose.service.Execute" method="reg">
    <result name="SUCCESS">/regAction.jsp</result>
  </action>
  
-  <action name="update" class="com.test.UpdateTest" method="update">
+  <action name="update" class="com.goose.service.Execute" method="update">
    <result name="SUCCESS">/updateAction.jsp</result>
  </action>
  

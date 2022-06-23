@@ -10,9 +10,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 
 <head>
-<meta charset="UTF-8">
-<title>学生信息注册页面</title>
-<link rel="stylesheet" type="text/css" href="reg.css" media="all" />
+<title>注册</title>
+<link rel="stylesheet" type="text/css" href="css/reg.css" media="all" />
 
 </head>
 <script type="text/javascript">

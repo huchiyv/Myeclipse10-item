@@ -10,7 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <base href="<%=basePath%>">
     
     <title>login fail</title>
-    <link rel="stylesheet" href="fail.css"/>
+    <link rel="stylesheet" href="css/fail.css"/>
     <style>
        .demo1{position: fixed; top: 10px; left:0px; bottom:0px; width:100%; height: 50px;background-color: #acffcb;z-index:999;}
     </style>

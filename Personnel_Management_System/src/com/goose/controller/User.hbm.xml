@@ -5,13 +5,13 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
     
  <hibernate-mapping>
-   <class name="com.hd.User" table="dl">
+   <class name="com.goose.controller.User" table="dl">
      
        <id name="id" column="c_id">
             <generator class="native"></generator>
          </id>
        
-       <property name="na" column="c_na"></property>
-       <property name="pw" column="c_pw"></property>
+       <property name="name" column="c_na"></property>
+       <property name="pwd" column="c_pw"></property>
    </class>
  </hibernate-mapping>

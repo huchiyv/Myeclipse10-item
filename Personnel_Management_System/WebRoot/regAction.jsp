@@ -7,9 +7,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <meta charset="UTF-8">
     <title>Login Success</title>
-    <link rel="stylesheet" href="success.css"/>
+    <link rel="stylesheet" href="css/success.css"/>
     <style>
        .demo1{position: fixed; top: 10px; left:0px; bottom:0px; width:100%; height: 50px;background-color: #acffcb;z-index:999;}
     </style>

@@ -12,6 +12,6 @@
       <property name="hibernate.connection.password">root</property>
       
       <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-      <mapping resource="com/hd/User.hbm.xml"></mapping>
+      <mapping resource="com/goose/controller/User.hbm.xml"></mapping>
    </session-factory>
 </hibernate-configuration>
