@@ -5,6 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.goose.controller.*;
 import com.goose.dao.*;
+import com.goose.md5.MD5;
 
 public class Execute {
 	private String ID;
@@ -19,10 +20,10 @@ public class Execute {
 	public void setName(String name) 	{	this.name = name;}
 	
 	public String getPwd() 						{	return pwd;}
-	public void setPwd(String pwd) 		{	this.pwd = pwd;}
+	public void setPwd(String pwd) 		{	this.pwd = MD5.md5(pwd);}
 	
 	public String getPwd1() 						{	return pwd1;}
-	public void setPwd1(String pwd1) 	{	this.pwd1 = pwd1;}
+	public void setPwd1(String pwd1) 	{	this.pwd1 = MD5.md5(pwd1);}
 	
 	public String login(){
 		UserAction  testAction = new UserAction();
