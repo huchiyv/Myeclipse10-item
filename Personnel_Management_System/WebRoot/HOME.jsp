@@ -54,7 +54,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <div class="videocontainer">
 
-    <video class="fullscreenvideo"  id="bgvid"  muted="" autoplay=""  loop="">
+    <video class="fullscreenvideo"  id="v1"  muted="" autoplay=""  loop="">
 
         <source src="video/loginbg.mp4" type="video/mp4">
 

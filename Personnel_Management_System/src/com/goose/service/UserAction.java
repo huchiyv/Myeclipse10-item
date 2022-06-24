@@ -58,8 +58,8 @@ public class UserAction {
 	public String del(Integer delId) {
 		  ApplicationContext ac=new ClassPathXmlApplicationContext("applicationContext.xml");
 		  UserDao userDao = (UserDao)ac.getBean("userDaoimpl");
-		userDao.delete(delId);
-		return "SUCCESS";
+		  String string =userDao.delete(delId);
+		return string;
 	}
 
 	@Test
