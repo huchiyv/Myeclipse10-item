@@ -1,7 +1,7 @@
 # Myeclipse10-item
 用来存储自己学习中的myeclipse10上的项目代码，也是学习git的仓库  
 # 关于JavaEE课程设计大作业
-## 源码请移步finally分支
+## 源码请移步[finally分支](https://github.com/huchiyv/Myeclipse10-item/tree/finally)
 # 运行结果(屏幕截图)：
 ## 主页：  
 ### 主页是一个视频做的背景，这里是截图
